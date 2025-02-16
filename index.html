@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DengX - Iyong Kaibigan Laban sa Dengue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Hero Chat Interface -->
+    <main class="chat-container">
+        <div class="chat-header">
+            <div class="mascot-container">
+                <img src="assets/images/kalabaw-avatar.png" alt="DengX Avatar" class="mascot-avatar">
+                <div class="mascot-status"></div>
+            </div>
+            <div class="header-text">
+                <h1>DengX</h1>
+                <span class="status">Online - Handang Tumulong</span>
+            </div>
+        </div>
+
+        <div id="chat-messages" class="messages-area">
+            <div class="message bot-message welcome-message">
+                <div class="typing-animation">
+                    Kumusta! Ako si DengX, ang iyong kaibigan laban sa dengue. 
+                    Sabihin mo sa akin ang iyong pangalan, at magtuturo ako kung 
+                    paano mapoprotektahan ang iyong pamilya!
+                </div>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <button class="input-button voice-button">
+                <i class="fas fa-microphone"></i>
+            </button>
+            <input type="text" 
+                   id="user-input" 
+                   placeholder="Mag-type ng mensahe dito..."
+                   aria-label="Message input">
+            <button class="input-button send-button">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </main>
+
+    <!-- Progress Tree -->
+    <aside class="progress-tree">
+        <h2>Puno ng Kalusugan</h2>
+        <div id="tree-container"></div>
+    </aside>
+
+    <!-- Floating Action Button -->
+    <button class="floating-button">
+        <span class="button-text">Kausapin si DengX</span>
+        <div class="button-icon">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+    </button>
+
+    <!-- For the logo in navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" alt="DengX Logo" class="navbar-logo">
+            </a>
+            <!-- ... rest of your nav content ... -->
+        </div>
+    </nav>
+
+    <!-- For the hero section background -->
+    <style>
+    .hero-section {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('assets/images/hero-bg.jpg');
+    }
+    </style>
+</body>
+</html> 
